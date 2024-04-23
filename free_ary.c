@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * free_array - function to free a array
  * @tokens: array to be free

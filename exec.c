@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * execution - function that compares our string and execute the command.
  * @tokens: Our array of tokens

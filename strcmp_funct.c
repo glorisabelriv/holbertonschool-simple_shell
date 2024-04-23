@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * _strcmp - compare two strings
  *
@@ -19,7 +19,7 @@ int _strcmp(char *compring, char *comp)
 	return (*compring - *comp);
 }
 
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * _strncmp - Compares two strings with n size
  *

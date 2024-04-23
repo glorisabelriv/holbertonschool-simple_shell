@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * add_path - this functions concatenates the path with the cmd
  * @tokens: the cmd the person introduces

@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * _strcpy - Copies the string pointed to by src
  * including the terminating null byte(\0), to the buffer
@@ -25,7 +25,7 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * _strcat - This function appendes the src to the dest string,
  * overwritingh the termination null byte at the end of dest,
@@ -60,7 +60,7 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * _strlen - Return the lenght of a string
  *
@@ -78,7 +78,7 @@ int _strlen(char *s)
 	return (len);
 }
 
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * _strdup - Duplicates a given string
  * @s: given string

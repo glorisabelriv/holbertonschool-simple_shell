@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "simple_shell.h"
 /**
  * main - it run our infiite loop for the shell
  * @ac: argument count

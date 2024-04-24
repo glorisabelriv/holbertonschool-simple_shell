@@ -43,7 +43,7 @@ int main(int ac __attribute__((unused)), char **av,  char **env)
 			if (die(tokens) == 1)
 				execution(tokens, env);
 		}
-		else
+		else if (tokens != NULL)
 			free(tokens);
 	}
 	free_array(tokens);
@@ -62,8 +62,8 @@ int die(char **tokens)
 {
 	if (_strcmp(tokens[0], "exit") == 0)
 	{
-		free_array(tokens);
 		exit(0);
+		free_array(tokens);
 	}
 	return (1);
 }

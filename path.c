@@ -8,20 +8,15 @@
  */
 char *path(char **env)
 {
-	int i = 0;
-	char *path,  **cp_path;
+	int i;
 
-	while (env[i])
-	{
-		if (_strncmp(env[i], "PATH", 4) == 0)
-		{
-			path = _strdup(env[i]);
-			cp_path = tokenization(path, "=");
-			free(path);
-			path = _strdup(cp_path[1]);
-		}
-		i++;
-	}
-	free_array(cp_path);
-	return (path);
+    for (i = 0; env[i] != NULL; i++)
+    {
+        if (strncmp(env[i], "PATH=", 5) == 0)
+        {
+            char *pathValue = strchr(env[i], '=') + 1;
+            return strdup(pathValue);
+        }
+    }
+    return (NULL);
 }

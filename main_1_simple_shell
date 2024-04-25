@@ -1,0 +1,35 @@
+MAN PAGE
+
+.TH SIMPLE_SHELL "04-20-2024" "USER MANUALS"
+
+.SH NAME
+Simple Shell - Command language interpreter
+
+
+.SH SYPNOSIS
+.TP
+.B interactive format
+"./hsh"
+.TP
+.B non-interactive format
+"echo /bin/ls | ./hsh"
+
+
+.SH DESCRIPTION
+
+This project is made for learning purposes. Made by Glorisabel Rivera.
+
+
+
+.SS Overview
+A shell is a command interpreter. That is, a program that is responsible for translating the commands that introduce the user into instructions to access the operating system services.
+
+
+.SS Command Execution
+After a command has been split into words, if it results in a simple command and an optional list of arguments, the following actions are taken.
+
+/bin/ls
+
+
+.SH AUTHOR
+Glorisabel Rivera

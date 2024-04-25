@@ -36,28 +36,17 @@ char *_strcpy(char *dest, char *src)
  *
  * Return: a pointer to the resulting string of dest.
  */
-char *_strcat(char *dest, char *src)
-{
-	int mv, origin;
-
-	origin = 0;
-	mv = 0;
-
-	while (dest[origin] != '\0')
-		origin++;
-
-	dest[origin] = '/';
-
-	origin++;
-
-	while (src[mv] != '\0')
-	{
-		dest[origin] = src[mv];
-		origin++;
-		mv++;
-	}
-	dest[origin] = '\0';
-	return (dest);
+char *_strcat(char *dest, const char *src) {
+    char *ret = dest;
+    while (*dest) dest++;
+    if (*(dest - 1) != '/') {
+        *dest++ = '/';
+    }
+    while (*src) {
+        *dest++ = *src++;
+    }
+    *dest = '\0';
+    return ret;
 }
 
 #include "simple_shell.h"

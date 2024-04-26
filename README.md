@@ -72,6 +72,15 @@ You don’t have to:
    - as well as the exact same error output.
    - The only difference is when you print an error, the name of the program must be equivalent to your argv[0]
 
+
+### Builtins
+* ```exit``` exits shell (```Usage: exit [status]```)
+* ```env``` prints environmental variables (Usage: ```env```)
+
+### Functions and sytems calls used
+```malloc```, ```free```, ```execve```, ```wait```, ```write```, ```exit```
+
+
 ### Allowed functions & system calls
 
     - access (man 2 access)
@@ -107,10 +116,26 @@ You don’t have to:
     - write (man 2 write)
 
 
-## Instalation 
-
-   - Use the "./hsh" Command to open our Simple Shell in built in terminal. 
-   - Here you will be able to access our KOOPA interface. 
+### How To Install, Compile, and Use
+Install and Compile
+```
+(your_terminal)$ git clone git@github.com:glorisabelriv/holbertonschool simple_shell.git
+(your_terminal)$ cd holbertonschool-simple_shell
+(your_terminal)$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+```
+Sample Usage
+```
+$ /bin/ls
+ file1.c  file2.c file3.c
+$ /bin/pwd
+/home/usr/holbertonschool-simple_shell
+$ man ./man_1_simple_shell (opens more information)
+```
+Stop and return to your original shell
+```
+$ exit
+(your_terminal)$
+```
 
 ### Usage (Interactive & Non-Interactive, Built-In)
 

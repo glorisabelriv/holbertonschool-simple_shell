@@ -31,7 +31,7 @@ char **tokenization(char *ptr, char *delim)
         tokens[i] = strdup(token);
         if (!tokens[i]) {
             perror("strdup failed");
-            free_array(tokens);
+            free (tokens);
             return (NULL);
         }
         i++;

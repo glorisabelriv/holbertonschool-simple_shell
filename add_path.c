@@ -19,10 +19,9 @@ char *add_path(char **tokens, char **tok_path) {
         }
         strcpy(cmd, tok_path[i]);
         _strcat(cmd, tokens[0]);
-        printf("Checking path: %s\n", cmd);
+
 
         if (stat(cmd, &stat_buf) == 0) {
-            printf("Executable found: %s\n", cmd);
             return (cmd);
         }
         free(cmd);

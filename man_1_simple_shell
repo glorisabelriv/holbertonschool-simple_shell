@@ -1,12 +1,9 @@
-MAN PAGE
-
 .TH SIMPLE_SHELL "04-20-2024" "USER MANUALS"
 
 .SH NAME
 Simple Shell - Command language interpreter
 
-
-.SH SYPNOSIS
+.SH SYNOPSIS
 .TP
 .B interactive format
 "./hsh"
@@ -14,12 +11,8 @@ Simple Shell - Command language interpreter
 .B non-interactive format
 "echo /bin/ls | ./hsh"
 
-
 .SH DESCRIPTION
-
-Simple shell is one version of a command language interpreter that executes commands read from the standard input.
-
-
+Simple Shell is one version of a command language interpreter that executes commands read from the standard input.
 
 .SS Overview
 A shell is a command interpreter. That is, a program that is responsible for translating the commands that introduce the user into instructions to access the operating system services.
@@ -27,6 +20,17 @@ A shell is a command interpreter. That is, a program that is responsible for tra
 .SS PATH
 It does not yet handle piping, redirections, pattern matching, variables expansions.
 
+.SS INSTALL AND COMPILE
+(your_terminal)$ git clone git@github.com:glorisabelriv/holbertonschool-simple_shell.git
+(your_terminal)$ cd holbertonschool-simple_shell
+(your_terminal)$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+.SS SAMPLE USAGE
+$ /bin/ls
+ file1.c  file2.c file3.c
+$ /bin/pwd
+/home/usr/holbertonschool-simple_shell
+$ man ./man_1_simple_shell (opens more information)
 
 .SS Command Execution
 After a command has been split into words, if it results in a simple command and an optional list of arguments, the following actions are taken.
@@ -37,6 +41,5 @@ After a command has been split into words, if it results in a simple command and
     env - prints environmental variables
     exit - exits out of simple shell and returns to user's original shell
 
-
 .SH AUTHOR
-Glorisabel Rivera, Jeremy Etienne y Emanuel Mendez
+Glorisabel Rivera, Jeremy Etienne, and Emanuel Mendez

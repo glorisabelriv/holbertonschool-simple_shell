@@ -17,12 +17,15 @@ Simple Shell - Command language interpreter
 
 .SH DESCRIPTION
 
-This project is made for learning purposes. Made by Glorisabel Rivera.
+Simple shell is one version of a command language interpreter that executes commands read from the standard input.
 
 
 
 .SS Overview
 A shell is a command interpreter. That is, a program that is responsible for translating the commands that introduce the user into instructions to access the operating system services.
+
+.SS PATH
+It does not yet handle piping, redirections, pattern matching, variables expansions.
 
 
 .SS Command Execution
@@ -30,6 +33,10 @@ After a command has been split into words, if it results in a simple command and
 
 /bin/ls
 
+.SS SHELL BUILTIN COMMANDS
+    env - prints environmental variables
+    exit - exits out of simple shell and returns to user's original shell
+
 
 .SH AUTHOR
-Glorisabel Rivera
+Glorisabel Rivera, Jeremy Etienne y Emanuel Mendez
